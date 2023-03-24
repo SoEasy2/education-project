@@ -1,12 +1,14 @@
 import React from 'react';
+import {useTranslation} from "react-i18next";
 
-const Component: React.FC = () => {
+const AboutPage = () => {
+    const {t} = useTranslation('about');
+
     return (
         <div>
-            About page
+            {t('О сайте')}
         </div>
     );
 };
-const AboutPage = React.memo(Component)
 
 export default AboutPage;

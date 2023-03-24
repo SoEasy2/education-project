@@ -1,12 +1,14 @@
 import React from 'react';
+import {useTranslation} from "react-i18next";
 
-const Component: React.FC = () => {
+const MainPage = () => {
+    const {t} = useTranslation();
+
     return (
         <div>
-            Main page
+            {t('Главная страница')}
         </div>
     );
 };
-const MainPage = React.memo(Component)
 
 export default MainPage;
