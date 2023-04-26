@@ -19,11 +19,16 @@ export const Navbar = ({ className }: NavbarProps) => {
 
     return (
         <div className={classNames(cls.Navbar, {}, [className])}>
-            <Button theme={ButtonTheme.CLEAR_INVERTED} className={cls.links} onClick={onToggleModal}>
+            <Button
+                theme={ButtonTheme.CLEAR_INVERTED}
+                className={cls.links}
+                onClick={onToggleModal}
+            >
                 { t('Войти') }
             </Button>
             <Modal isOpen={isAuthModal} onClose={onToggleModal}>
-                Lorem  ipsum dsaasdd sad dddddd asddddas sad das asddasdasd sad asd asdas das das dasd as as das d
+                {/* eslint-disable-next-line max-len */}
+                {t('Lorem  ipsum dsaasdd sad dddddd asddddas sad das asddasdasd sad asd asdas das das dasd as as das d')}
             </Modal>
         </div>
     );
